@@ -4,7 +4,6 @@ import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
 const ProfilePhotos = ({ photos }) => {
-  console.log("ProfilePhotos", photos);
   return (
     <div
       className="h-16 border-t border-gray-primary mt-12

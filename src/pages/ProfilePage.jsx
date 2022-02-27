@@ -9,7 +9,6 @@ import { getUserByUsername } from "../services/firebase.services";
 
 function ProfilePage() {
   const { username } = useParams();
-  console.log("username", username);
 
   const [user, setUser] = useState(null);
 
@@ -27,7 +26,6 @@ function ProfilePage() {
     };
 
     checkUserExists();
-    console.log("user", user);
   }, [username, navigate]);
 
   return user?.username ? (
